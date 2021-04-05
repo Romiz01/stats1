@@ -2,6 +2,7 @@ package stats
 
 import (
 	"fmt"
+
 	"github.com/Romiz01/bank1/v2/pkg/types"
 )
 
@@ -49,14 +50,14 @@ func ExampleTotalInCategory() {
 		{
 			ID:       3,
 			Amount:   52_00,
-			Category: "auto",
+			Category: "smart",
 			Status:   types.StatusFail,
 		},
 	}
 
-	inCategory := types.Category("auto")
+	inCategory := types.Category("Merve")
 	totalInCategory := TotalInCategory(payments, inCategory)
 	fmt.Println(totalInCategory)
-	//Output:  1000000
+	//Output:  5300
 
 }
