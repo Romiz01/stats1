@@ -49,7 +49,7 @@ func ExampleTotalInCategory() {
 		{
 			ID:       3,
 			Amount:   52_00,
-			Category: "auto",
+			Category: "smart",
 			Status:   types.StatusFail,
 		},
 	}
@@ -57,6 +57,6 @@ func ExampleTotalInCategory() {
 	inCategory := types.Category("auto")
 	totalInCategory := TotalInCategory(payments, inCategory)
 	fmt.Println(totalInCategory)
-	//Output:  1000000
+	//Output:  0
 
 }
